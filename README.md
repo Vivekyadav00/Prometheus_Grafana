@@ -62,6 +62,7 @@ Grafana supports a wide range of data sources, including databases, time-series 
 
 In addition to its powerful data visualization and analysis capabilities, Grafana is also highly extensible. It supports a wide range of plugins and integrations, including integrations with popular monitoring and logging tools like Prometheus, Elasticsearch, and InfluxDB.
 
+## Error and Solution
 
 Error: if we use docker as driver on linux, we unable to access the prometheus even after exposing the service type as nodeport.
 
