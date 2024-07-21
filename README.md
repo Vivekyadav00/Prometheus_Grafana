@@ -61,3 +61,10 @@ Grafana is a popular open-source data visualization and analytics platform that 
 Grafana supports a wide range of data sources, including databases, time-series databases, and other data storage systems. It provides a powerful query language that allows you to retrieve and analyze data from these sources, and to create custom dashboards and alerts based on that data.
 
 In addition to its powerful data visualization and analysis capabilities, Grafana is also highly extensible. It supports a wide range of plugins and integrations, including integrations with popular monitoring and logging tools like Prometheus, Elasticsearch, and InfluxDB.
+
+
+Error: if we use docker as driver on linux, we unable to access the prometheus even after exposing the service type as nodeport.
+
+Solution: used command “ minikube service prometheus-server-ext “ which provided url as output to access the prometheus. Because when using docker driver on linux, the terminal needs to be open to run it.
+
+But once we stop the tunnel we unable to access prometheus on local host. So, it is better to use virtual box(windows)/ hyperkit(mac) as driver for minikube.
